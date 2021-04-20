@@ -20,6 +20,7 @@ Dataset Requirements:
 - https://data.world/niccolley/us-zipcode-to-county-state/workspace/file?filename=ZIP-COUNTY-FIPS_2018-03.csv (rename to county_to_zip.csv)
 - index.csv (this is provided in the package)
 
+Place 'Zip_time_series.csv' and 'county_to_zip.csv' into the '/data/' folder (see structure below).
 
 Description:
 
