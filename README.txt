@@ -1,5 +1,25 @@
 ####################################
-#      Data Loader / Modeling      #
+#     	     Description     	   #
+####################################
+
+This file loads in the dataset obtained from Kaggle. From there, it reads in the data and adds city, county, and state codes to each zip code. From there it imputes values for missing values through grouping.
+
+After the data has been trimmed and imputed, the script enters the modeling section. This modeling section builds a predictive model for each Zip code.
+
+The script returns a CSV of the completely clean filed along with a column of predicted values, as well as another CSV file of the forecasted values for the next 6 months.
+
+Folder Structure:
+
+- Main Folder
+	- /data/
+		Zip_time_series.csv
+		county_to_zip.csv
+		index.csv
+	- data_loader.py
+	- /final/
+
+####################################
+#      	    Installation	   #
 ####################################
 
 Requirements:
@@ -22,25 +42,9 @@ Dataset Requirements:
 
 Place 'Zip_time_series.csv' and 'county_to_zip.csv' into the '/data/' folder (see structure below).
 
-Description:
-
-This file loads in the dataset obtained from Kaggle. From there, it reads in the data and adds city, county, and state codes to each zip code. From there it imputes values for missing values through grouping.
-
-After the data has been trimmed and imputed, the script enters the modeling section. This modeling section builds a predictive model for each Zip code.
-
-The script returns a CSV of the completely clean filed along with a column of predicted values, as well as another CSV file of the forecasted values for the next 6 months.
-
-Folder Structure:
-
-- Main Folder
-	- /data/
-		Zip_time_series.csv
-		county_to_zip.csv
-		index.csv
-	- data_loader.py
-	- /final/
-
-Usage:
+####################################
+#      	     Execution             #
+####################################
 
 In a command prompt, navigate to the main folder.
 
